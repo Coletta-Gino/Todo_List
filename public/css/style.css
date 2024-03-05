@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 1000px;
+  padding: 20px;
+}
+
+.todo-list {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#counter {
+  margin: 10px 0;
+}
+
+#CreateForm .control:first-child {
+  width: -webkit-fill-available;
+}
+
+#UpdateForm {
+  display: none;
+}
+
+#tasks div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #dbdbdb;
+}
+
+#tasks .task {
+  width: 65%;
+}
+
+#tasks .actions {
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#tasks .actions button:first-child {
+  margin-right: 0.75rem;
+}
+
+#tasks .actions button {
+  margin: 0.375rem 0;
+}

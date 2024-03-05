@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List With CRUD</title>
+  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.css" integrity="sha512-SI0aF82pT58nyOjCNfyeE2Y5/KHId8cLIX/1VYzdjTRs0HPNswsJR+aLQYSWpb88GDJieAgR4g1XWZvUROQv1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <section class="wrapper">
+    <div class="todo-list">
+      <h1 class="title">My Todo List With Bulma ❤️</h1>
+
+      <em><h2 class="subtitle is-5" id="counter"></h2></em>
+
+      <form action="javascript:void(0);" id="CreateForm" class="mb-5">
+        <div class="field has-addons">
+          <div class="control">
+            <input class="input" type="text" id="add-task" placeholder="New task">
+          </div>
+
+          <div class="control">
+            <button class="button is-success" id="createBtn">
+              <span>Create</span>
+              <span class="icon is-small">
+                <i class="fa fa-check"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <form action="javascript:void(0);" id="UpdateForm" class="mb-5">
+        <input class="input" type="text" id="update-task">
+
+        <div class="field is-grouped">
+          <p class="control">
+            <button class="button is-link" id="updateBtn">
+              <span>Save</span>
+              <span class="icon is-small">
+                <i class="fa fa-floppy-o"></i>
+              </span>
+            </button>
+          </p>
+
+          <p class="control">
+            <button class="button is-outlined" id="close">
+              <span>Cancel</span>
+              <span class="icon is-small">
+                <i class="fa fa-times"></i>
+              </span>
+            </button>
+          </p>
+        </div>
+      </form>
+
+      <div id="tasks"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../public/js/app.js"></script>
+</body>
+</html>
